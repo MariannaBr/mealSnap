@@ -63,7 +63,7 @@ exports.updateStreakOnPost = onDocumentCreated(
 const everyDay = "every day 00:00";
 const every5Minutes = "every 5 minutes";
 
-exports.dailyStreakCheck = onSchedule(every5Minutes, async (event) => {
+exports.dailyStreakCheck = onSchedule(everyDay, async (event) => {
   console.log("Running daily streak check...");
 
   const usersSnapshot = await db.collection("users").get();
