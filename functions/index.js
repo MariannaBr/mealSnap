@@ -60,7 +60,7 @@ exports.updateStreakOnPost = onDocumentCreated(
 
 // Daily streak check
 
-const everyDay = "every day 00:00";
+const everyDay = "every day 08:00"; // Adjust the timezone for Pacific Time UTC-8
 const every5Minutes = "every 5 minutes";
 
 exports.dailyStreakCheck = onSchedule(everyDay, async (event) => {
